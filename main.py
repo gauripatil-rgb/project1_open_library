@@ -18,10 +18,10 @@ def title_search(title, count):
             print("No books found")
             return
         for books in book[:count]:
-            print("📘Title:", books.get("title"))
+            print("Title:", books.get("title"))
             print("Author Name:", books["author_name"][0])
             print("Author Key:", books["author_key"][0])
-            print("📅first publish year:", books["first_publish_year"],"\n")
+            print("first publish year:", books["first_publish_year"],"\n")
         click.echo(f"The book name has been fetched successfully by {title}")
     else:
         print("Error:", response.status_code)
